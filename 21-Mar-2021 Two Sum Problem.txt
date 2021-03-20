@@ -1,1 +1,5 @@
 https://leetcode.com/problems/two-sum/
+
+Small Change
+-Just return 1 when there are any 2 elements in the array which sum up to the target
+-Else Return 0
