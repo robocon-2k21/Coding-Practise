@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+
+int nums[5]={4,8,6,9,5};
+int s,i,target=13;
+ 
+ void main()
+{
+   clrscr();     
+   for(i=0;i<=3;i++) 
+ {    
+    for(j=1;j<=3;j++)
+   {
+     s=nums[i]+nums[j];
+   }
+   printf("value of s is :%d\n",s);
+ }
+
+if(s==target)
+{
+    printf("return:1");
+}
+     
+else
+{
+    printf("return:0");
+}
+     
+ getch();
+     
+}
+
+      
