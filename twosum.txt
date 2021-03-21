@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int size=4,num[]={4,7,10,22},target=17;
+for(int i=0;i<size;i++)
+{ 
+if(target==num[i]+num[i+1]|| target==num[i]+num[size-1])
+{
+printf("1");
+}
+else
+printf("0");
+}
+}
