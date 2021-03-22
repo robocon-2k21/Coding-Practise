@@ -1,0 +1,4 @@
+def addBinary(a: str, b: str) -> str:
+	c = bin(int(a,2)+int(b,2))
+	return c[2:]
+print(addBinary("100","1"))
