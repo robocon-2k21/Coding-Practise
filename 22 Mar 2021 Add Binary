@@ -1,0 +1,7 @@
+https://leetcode.com/problems/add-binary/
+
+pls dont take predefined inputs a=11 and b=101 etc in your code. the code always asks that the input should be given by the user from the 
+command prompt and code should be versatile and robust enough to generate output for any number. I dont want to see the mistakes from yesterday's code repeated 
+in this one.
+
+try to run your code in leetcode and submit if you get success than only think you are correct. dont assume on your own
