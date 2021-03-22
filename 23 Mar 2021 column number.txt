@@ -1,1 +1,4 @@
 https://leetcode.com/problems/excel-sheet-column-title/
+
+Constraints for you : 1 <= columnNumber <= 26^3(meaning 17576)
+ 
