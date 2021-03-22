@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int sum(int nums[],int target)
 {
@@ -7,12 +8,13 @@ for(int j=i+1;j<4;j++)
 {
 if(target== nums[i]+nums[j])
 {
-printf("true");
+//printf("true");
+return 1;
 }
-else
-{
-printf("false");
-}
+//else
+//{
+//printf("false");
+//}
 }
 }
 return 0;
@@ -24,10 +26,13 @@ int nums[4];
 int target;
 for(int a=0;a<=3;a++)
 {
-scanf("%d \n",&nums[a]);
+scanf("%d",&nums[a]);
+//printf("%d", nums[a]);
 }
-scanf("%d \n",&target);
-sum(nums[4],target);
+scanf("%d",&target);
+//printf("outside loop");
+
+sum(nums,target);
+
 return 0;
 }
-
