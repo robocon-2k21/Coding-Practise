@@ -1,0 +1,48 @@
+#include <stdio.h>
+void main()
+{
+  int  num,bin,deci = 0,base = 1,rem;
+  int  num1,bin1,deci1 = 0,base1 = 1,rem1;
+  printf("Enter a number in binary :\n");
+  scanf("%d",&num);
+  
+  
+  bin = num;
+  while (num > 0)
+    {
+        rem = num % 10;
+        deci = deci + rem * base;
+        num = num / 10 ;
+        base = base * 2;
+    }
+    
+  
+  printf("Enter second number in binary :\n");
+  scanf("%d",&num1);
+  
+  
+  bin1 = num1;
+  while (num1 > 0)
+    {
+        rem1 = num1 % 10;
+        deci1 = deci1 + rem1 * base1;
+        num1 = num1 / 10 ;
+        base1 = base1 * 2;
+    }
+  
+  int Sum=deci+deci1;
+  
+  printf("%d + %d = %d\n",deci,deci1,Sum);
+ 
+ int var,rem2,binary=0,i=1;
+  var=Sum;
+  while(Sum!=0)
+  {
+    rem2=Sum%2;
+    Sum=Sum/2;
+    binary=binary+(rem2*i);
+    i=i*10;
+    
+  }
+  printf("The value of %d in binary is %d",var,binary);
+}
