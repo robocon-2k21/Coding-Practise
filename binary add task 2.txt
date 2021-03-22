@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int  num1,num2,bin1,bin2,deci1 = 0,deci2=0,base1 = 1,base2=1,rem1,rem2,var,rem,binary=0,i=1;
+printf("Enter any number in binary :\n");
+scanf("%d" ,&num1);
+  bin1 = num1;
+  printf("Enter any number in binary :\n");
+scanf("%d" ,&num2);
+  bin2 = num2;
+
+  while (num1 > 0)
+    {
+        rem1 = num1 % 10;
+        deci1 = deci1 + rem1 * base1;
+        num1 = num1 / 10 ;
+        base1 = base1 * 2;
+    }
+     while (num2 > 0)
+    {
+        rem2 = num2 % 10;
+        deci2 = deci2 + rem2 * base2;
+        num2 = num2 / 10 ;
+        base2 = base2 * 2;
+    }
+ printf("The Binary number is = %d \n", bin1);
+printf("Decimal equivalent = %d \n", deci1);
+printf("The Binary number is = %d \n", bin2);
+printf("Decimal equivalent = %d \n", deci2);
+int add=deci1+deci2;
+printf("%d",add);
+  var=add;
+  while(add!=0)
+  {
+    rem=add%2;
+    add=add/2;
+    binary=binary+(rem*i);
+    i=i*10;
+    
+  }
+  printf("the value of %d in binary is %d",var,binary);
+
+}
