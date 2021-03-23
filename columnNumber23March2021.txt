@@ -1,0 +1,7 @@
+def columnNumber(s: str) -> int:
+	output = 0
+	for digit in s:
+		x = ord(digit) + ord('A') + 1
+		output = output*26 + x
+	return output
+print(columnNumber("ABD"))
