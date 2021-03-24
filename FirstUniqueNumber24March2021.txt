@@ -1,4 +1,4 @@
-def firstUniqueNumber(s: str) -> int
+def firstUniqueCharacter(s: str) -> int
 	for i in s:
 	  if s.count(i) == 1
 	  return s.index(i)
