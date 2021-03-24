@@ -22,3 +22,32 @@ int main()
     printf("your column is %c%c%c",(n/676)+64,((n%676)/26)+64-1,26+64);
   }
 }
+
+
+//updated
+#include <stdio.h>
+
+void main()
+{
+char str[10]="";
+int n,i;
+printf("enter column number=");
+scanf("%d",&n);
+for(i=0;i<10;i++)
+{
+if(n>0){
+if(n%26==0){
+str[i]=90;
+n/=26;
+n--;
+}
+else{
+str[i]=(n%26)+64;
+n/=26;
+}
+}
+else break;
+}
+while(i-- >= 0)
+printf("%c",str[i]);
+}
