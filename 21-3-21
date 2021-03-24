@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum,target;
+    int size,flag=0;
+
+    printf("enter the size of number \n");
+    scanf("%d",&size);
+
+    int numb[size];
+
+    printf("enter the target \n");
+    scanf("%d",&target);
+    printf("enter the array of number \n");
+
+    for(int i=0; i<size; i++)
+    {
+        scanf("%d",&numb[i]);
+//        printf("the entered number is %d\n ",numb[i]);
+    }
+    for(int i=0; i<size-1; i++)
+        {
+            sum=numb[i]+numb[i+1];
+            if(sum==target)
+            {
+               // printf("[%d , %d]\n ",i,i+1);     //this is according to leetcode defination
+               flag=1;
+            }
+
+        }
+        if(flag==1)
+        {
+            printf("%d \n",1);
+            return 1;
+        }
+
+        else
+        {
+            printf("%d \n",0);
+            return 0;
+        }
+
+}
