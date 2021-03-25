@@ -4,4 +4,4 @@ def firstUniqueNumber(s: str) -> int
 	  return s.index(i)
 	return -1
 
-print(firstUniqueCharacter("roborobocon"))
+print(firstUniqueNumber("roborobocon"))
