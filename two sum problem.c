@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
-int main()
+void main()
 {
     int a[10]={2,7,11,15};
     int sum=0,i,j;
@@ -12,13 +12,12 @@ int main()
       sum=a[j]+a[i];
       if(sum==9)
       {
-          printf("sum of %d+%d=%d 1 \n ",a[j],a[i],sum);
+         printf("true");
+
       }
-      else
-      {
-           printf("sum of %d+%d=%d  0 \n ",a[j],a[i],sum);
+      break;
       }
+
     }
-    }
-    return 0;
+    getch();
 }
