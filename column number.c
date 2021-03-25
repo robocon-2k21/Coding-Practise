@@ -15,12 +15,13 @@ void main()
        k=column_no%26;
        if(k>26)
        {
-           a[i]=(char)(k+55);
+           a[i]=(char)(k+38);
        }
        else
        {
            a[i]=(char)(k+64);
        }
+
        column_no=column_no/26;
        i++;
    }
