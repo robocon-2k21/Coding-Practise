@@ -1,0 +1,30 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <conio.h>
+int main()
+{   int n,a=0,b,c,d;
+    printf("give number");
+    scanf("%d", &n);
+    b=n;
+    while(a<=b){
+        c=a+(b-a)/2;
+        d=c*(c+1)/2;
+        if(d==n)
+        printf("%d", c);
+        if(n<d){
+            b=c-1;
+        }else{
+            a=c+1;
+        }
+    }
+    printf("%d", b);
+
+    return 0;
+}
