@@ -19,7 +19,7 @@ int main()
     i++;
     }
     puts(strrev(c));
-    //printf("%s",strrev(c));
+   
     //printf("Hello world! from patel soham\n");
     return 0;
 }
