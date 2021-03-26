@@ -2,14 +2,23 @@
 #include<conio.h>
 int main()
 {
-int size=4,num[]={4,7,10,22},target=17;
-for(int i=0;i<size;i++)
-{ 
+int i,j,num[10],sum,target,size;
 printf("Enter size of array= ");
+scanf("%d",&size);
+printf("Enter elements of array= ");
+for( i=0;i<size;i++)
 {
-printf("1");
+      scanf("%d",&num[i]);
 }
-else
-printf("0");
-}
+      printf("Enter target= ");
+      scanf("%d",&target);
+      for( i=0;i<size;i++)
+        { 
+            for ( j=i+1;j<size;j++)
+            {
+                sum =num[i]+num[j];         
+           }
+        }
+       if(sum==target)    printf("True");
+      else   printf("False");
 }
