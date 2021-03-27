@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-int main()
 void main()
 {
 int i,j,num[10],sum,target,size;
@@ -15,10 +14,8 @@ for( i=0;i<size;i++)
       scanf("%d",&target);
       for( i=0;i<size;i++)
         { 
-            for ( j=i+1;j<size;j++)
             for ( j=i+1;j<size;)
             {
-                sum =num[i]+num[j];         
                 sum =num[i]+num[j]; 
                if(sum==target) 
                {
@@ -29,8 +26,6 @@ for( i=0;i<size;i++)
               j++;        
            }
         }
-       if(sum==target)    printf("True");
-      else   printf("False");
             start:
             getch();
 }
