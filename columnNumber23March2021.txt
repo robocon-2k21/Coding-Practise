@@ -1,7 +1,10 @@
-def columnNumber(s: str) -> int:
-	output = 0
-	for digit in s:
-		x = ord(digit) + ord('A') + 1
-		output = output*26 + x
+def columnTitle(s: int) -> str:
+	output = ''
+	while n:
+		x = char(ord('A')+((n-1)%26))
+		output = output + x
+		n=(n-1)/26
 	return output
-print(columnNumber("ABD"))
+print(columnTitle(435))
+
+#Note-Previously uploaded code was convertion to number xP
