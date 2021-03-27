@@ -1,4 +1,4 @@
-def arrangeCoins(coins: int) -> int
+def arrangeCoins(coins: int) -> int:
 	count = 0
 	for i in range(1, coins+1):
 		if coins<i:
