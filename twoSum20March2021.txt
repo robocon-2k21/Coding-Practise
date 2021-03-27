@@ -1,4 +1,4 @@
-def twoSum(array, target)
+def twoSum(array, target):
 	i = 0
         for i, num1 in enumerate(array):
             num2 = target - num1
