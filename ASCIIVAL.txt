@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+
+int d,s;
+
+void main()
+{
+  clrscr();
+  printf("Enter the number : \n");
+  scanf("%d",&d);
+  s=d+64;
+  printf("ASCII value is : %c",s);
+  getch();
+
+}
+
