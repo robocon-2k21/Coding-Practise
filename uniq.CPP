@@ -20,7 +20,7 @@ void main()
 {
    clrscr();
    char s[10];
-   printf("enter str=");
+   printf("Enter String= ");
    scanf("%s",&s);
    char res = firstUniqChar(s);
    printf("%c ",res);
